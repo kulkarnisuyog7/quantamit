@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+body {
+    background: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    overflow-x: hidden;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+hr {
+    margin: 1rem 0;
+    color: inherit;
+    background-color: currentColor;
+    border: 0;
+    opacity: 0.25;
+}
+
+:root {
+    --blue: #ce3232;
+    --grey: #def0fc;
+    --orange: #f7ca00;
+}
+
+#wrapper {
+    overflow-x: hidden;
+}
+
+#sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    transition: margin 0.25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+    width: 15rem;
+}
+
+#page-content-wrapper {
+    min-width: 100vw;
+}
+
+body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
+    margin-left: 0;
+}
+
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+        margin-left: 0;
+    }
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+    body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
+        margin-left: -15rem;
+    }
+}
+
+
+/* dashboard */
+
+#dashboardboxes {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 1rem;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+.dbboxouter {
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    background-color: white;
+    box-shadow: 2px 2px 10px lightgrey;
+    border-radius: 5px;
+    padding: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.dbbox {
+    display: flex;
+}
+
+.dbboxleft {
+    margin-right: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.dbicon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7ca003d;
+    height: 2.7rem;
+    width: 2.7rem;
+    border-radius: 50%;
+}
+
+.dbicon span {
+    color: var(--orange);
+}
+
+.dbboxcount p {
+    font-weight: 550;
+    font-size: 1.2rem;
+}
+
+.dbboxname p {
+    color: grey;
+    font-size: 0.9rem;
+}
+
+.dbboxbottom {
+    display: flex;
+    justify-content: flex-end;
+    border-top: 1px dotted rgb(230, 230, 230);
+    margin-top: 0.6rem;
+}
+
+.dbboxbottom span {
+    color: rgb(180, 180, 180);
+}
+
+.dbboxouter:hover {
+    cursor: pointer;
+}
+
+.dbboxouter:hover .rightarrow {
+    color: grey;
+}
+
+
+/* ckeditor */
+
+#editor {
+    height: 200px;
+}
+
+
+/* all users */
+
+#alldatatable {
+    overflow-x: auto;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+#alldatatable button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.5rem;
+}
+
+#alldatatable button span {
+    font-size: 17px;
+}
+
+#datasearchbar {
+    width: 50%;
+    margin-left: 50%;
+}
+
+#datasearchbar input::placeholder {
+    font-size: 14px;
+}
+
+#datasearchbar button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+#datasearchbar span {
+    font-size: 20px;
+}
+
+.loginregisterformouter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.loginregisterform {
+    width: 70%;
+    padding: 2rem;
+    border: 1px solid rgb(231, 231, 231);
+    border-radius: 5px;
+}
+
+.bannerimgpostbtn {
+    text-align: center;
+}
+
+
+/* Smartphones ----------- */
+
+@media only screen and (min-device-width: 200px) and (max-device-width: 500px) {
+    .loginregisterform {
+        width: 100%;
+        padding: 1rem;
+        background-color: #fff;
+    }
+}
+
+
+/* data tables */
+
+#example_filter input {
+    width: 35vw;
+}
+
+#example1_filter input {
+    width: 35vw;
+}
+
+#example2_filter input {
+    width: 35vw;
+}
+
+#example3_filter input {
+    width: 35vw;
+}
